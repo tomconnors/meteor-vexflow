@@ -4,12 +4,6 @@ Package.describe({
 
 Package.on_use(function (api, where) {
 
-  //var path = Npm.require('path');
-
-  // api.add_files(path.join('css', 'bootstrap.css'), 'client');
-  // api.add_files(path.join('css', 'bootstrap-responsive.css'), 'client');
-  // api.add_files(path.join('js', 'bootstrap.js'), 'client');
-
   api.add_files("vex/src/header.js", "client");
   //api.add_files("vex/src/vex.js", "client");
   api.add_files("vex.js", "client")
@@ -65,4 +59,7 @@ Package.on_use(function (api, where) {
   api.add_files("vex/src/frethandfinger.js", "client");
   api.add_files("vex/src/stringnumber.js", "client");
   api.add_files("vex/src/strokes.js", "client");
+
+  api.export("Vex");
+
 });
