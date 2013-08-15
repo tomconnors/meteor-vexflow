@@ -60,6 +60,6 @@ Package.on_use(function (api, where) {
   api.add_files("vex/src/stringnumber.js", "client");
   api.add_files("vex/src/strokes.js", "client");
 
-  api.export("Vex");
+  api.export("Vex", ["client"]);
 
 });
